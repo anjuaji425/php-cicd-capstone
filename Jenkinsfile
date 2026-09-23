@@ -54,7 +54,7 @@ pipeline {
         stage('Deploy with Helm') {
             steps {
                 sh '''
-                    helm upgrade --install capstone \
+		    helm upgrade --install php-cicd \
                     ./helm-chart \
                     --namespace capstone \
                     --create-namespace \
